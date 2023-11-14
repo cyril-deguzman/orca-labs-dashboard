@@ -1,0 +1,16 @@
+{
+  "name": "prisma-lib",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/backend/prisma-lib/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/backend/prisma-lib/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

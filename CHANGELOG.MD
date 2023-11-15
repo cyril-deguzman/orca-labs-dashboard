@@ -5,6 +5,7 @@ Changelog Format
 NOTE: all lowercase and no ending punctuation marks
 -->
 
+- [CLIENT] - [#7](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/7) app(client): add shadcn
 - [INVENTORY] - [#6](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/6) app(microservice): inventory crud with prisma
 - [USER] - [#5](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/5) app(microservice): user crud with prisma
 - [ROOT] - [#3](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/3) app(library|db): prisma library

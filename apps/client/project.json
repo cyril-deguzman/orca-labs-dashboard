@@ -50,5 +50,8 @@
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "options": {
+    "postcssConfig": "apps/client/postcss.config.js"
+  }
 }

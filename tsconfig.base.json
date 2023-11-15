@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ex03/dto-lib": ["libs/backend/dto-lib/src/index.ts"],
       "@ex03/prisma-lib": ["libs/backend/prisma-lib/src/index.ts"]
     }
   },

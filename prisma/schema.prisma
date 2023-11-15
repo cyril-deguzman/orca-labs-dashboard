@@ -16,7 +16,7 @@ model User {
   updatedAt    DateTime @updatedAt
   email        String   @unique
   name         String?
-  activeStatus Boolean
+  activeStatus Boolean  @default(false)
   role         Role     @default(APPRENTICE)
 }
 

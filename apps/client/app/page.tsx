@@ -1,9 +1,5 @@
-import { Button } from '@ex03/ui-components';
+'use client';
 
 export default async function Index() {
-  return (
-    <div className="p-10">
-      <Button>hello</Button>
-    </div>
-  );
+  return <div className="p-20">LOGIN TO RAWR</div>;
 }

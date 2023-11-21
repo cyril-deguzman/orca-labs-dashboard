@@ -8,6 +8,7 @@ import SideNavItem from './side-nav-item';
 
 import GroupsIcon from '@mui/icons-material/Groups';
 import EditIcon from '@mui/icons-material/Edit';
+import ScienceIcon from '@mui/icons-material/Science';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
@@ -63,6 +64,11 @@ const SideNav = () => {
 const NavItems = [
   { text: 'Edit Profile', icon: <EditIcon />, link: '/dashboard/user-profile' },
   { text: 'Manage Users', icon: <GroupsIcon />, link: '/dashboard' },
+  {
+    text: 'Manage Inventory',
+    icon: <ScienceIcon />,
+    link: '/dashboard/manage-inventory',
+  },
   { text: 'Settings', icon: <SettingsIcon />, link: '/dashboard/settings' },
   { text: 'Log out', icon: <LogoutIcon />, link: '/' },
 ];

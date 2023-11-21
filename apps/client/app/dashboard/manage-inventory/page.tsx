@@ -11,26 +11,28 @@ import {
   TableHeader,
   TableRow,
 } from '@ex03/ui-components';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import useFetchAllUsers from '../../hooks/user-service/useFetchAllUsers';
+import ScienceIcon from '@mui/icons-material/Science';
+import useFetchAllInventory from '../../../hooks/inventory-service/useFetchAllInventory';
 
 const Dashboard = () => {
-  const { users, isLoading, isError } = useFetchAllUsers();
+  const { inventory, isLoading, isError } = useFetchAllInventory();
   const router = useRouter();
 
   return (
     <section>
-      <p className="text-sm">Dashboard {'>'} Manage Users</p>
+      <p className="text-sm">Dashboard {'>'} Manage Inventory</p>
       <div className="flex flex-row w-[92.5%]">
-        <h1 className="flex-1 font-medium text-2xl">Manage Users</h1>
+        <h1 className="flex-1 font-medium text-2xl">Manage Inventory</h1>
         <Button
-          onClick={() => router.push('/dashboard/create-user')}
+          onClick={() =>
+            router.push('/dashboard/manage-inventory/create-inventory')
+          }
           className="bg-[#023B58] dark:text-inherit hover:dark:text-white hover:dark:bg-[#002436]"
         >
           <span className="mr-1">
-            <PersonAddIcon />
+            <ScienceIcon />
           </span>
-          Add user
+          Add Inventory
         </Button>
       </div>
       {isError ? (
@@ -44,24 +46,16 @@ const Dashboard = () => {
               <TableRow>
                 <TableHead>ID</TableHead>
                 <TableHead>Name</TableHead>
-                <TableHead>Email</TableHead>
-                <TableHead>Status</TableHead>
+                <TableHead>Quantity</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {users?.map((user) => {
+              {inventory?.map((inv) => {
                 return (
-                  <TableRow key={user.id}>
-                    <TableCell className="font-medium">{user.id}</TableCell>
-                    <TableCell>{user.name}</TableCell>
-                    <TableCell>{user.email}</TableCell>
-                    <TableCell>
-                      {user.activeStatus ? (
-                        <div>online</div>
-                      ) : (
-                        <div>offline</div>
-                      )}
-                    </TableCell>
+                  <TableRow key={inv.id}>
+                    <TableCell className="font-medium">{inv.id}</TableCell>
+                    <TableCell>{inv.name}</TableCell>
+                    <TableCell>{inv.quantity}</TableCell>
                   </TableRow>
                 );
               })}

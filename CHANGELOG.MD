@@ -5,6 +5,8 @@ Changelog Format
 NOTE: all lowercase and no ending punctuation marks
 -->
 
+- [CLIENT] - [#11](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/11)app(feature): view and add inventory
+- [CLIENT] - [#10](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/10)app(feature): view and add user
 - [CLIENT] - [#9](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/9)app(layout): side bar navigation
 - [CLIENT] - [#8](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/8)app(pages): add skeleton for all needed pages
 - [CLIENT] - [#7](https://github.com/cyril-deguzman/orca-labs-dashboard/issues/7) app(client): add shadcn
